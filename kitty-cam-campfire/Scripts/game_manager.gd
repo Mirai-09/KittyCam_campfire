@@ -1,6 +1,6 @@
 extends Node
 var score = 0
-@onready var scorelabel: Label = $Scorelabel
+@onready var scorelabel: Label = %Scorelabel
 
 
 func add_point():
