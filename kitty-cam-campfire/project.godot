@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="KittyCam_Campfire"
-run/main_scene="uid://btf8y0q662l6j"
+run/main_scene="uid://ckbwk6msuxasc"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
 
