@@ -1,10 +1,10 @@
 [gd_scene load_steps=34 format=3 uid="uid://bfh4wxnqu68fa"]
 
-[ext_resource type="Texture2D" uid="uid://bwn8cibocpsyw" path="res://Assets/FreeCatCharacterAnimations/FreeCatCharacterAnimations/1_Cat_Idle-Sheet.png" id="1_4flbx"]
+[ext_resource type="Texture2D" uid="uid://bwn8cibocpsyw" path="res://Scripts/Assets/FreeCatCharacterAnimations/FreeCatCharacterAnimations/1_Cat_Idle-Sheet.png" id="1_4flbx"]
 [ext_resource type="Script" uid="uid://qhbaraajvv3s" path="res://Scripts/player.gd" id="1_cvnsp"]
-[ext_resource type="Texture2D" uid="uid://c7efgpihq47t" path="res://Assets/FreeCatCharacterAnimations/FreeCatCharacterAnimations/3_Cat_Jump-Sheet.png" id="3_fkybt"]
-[ext_resource type="Texture2D" uid="uid://bdi65wif5buv4" path="res://Assets/FreeCatCharacterAnimations/FreeCatCharacterAnimations/4_Cat_Fall-Sheet.png" id="4_x3wgy"]
-[ext_resource type="Texture2D" uid="uid://btrsqfyijp6bv" path="res://Assets/FreeCatCharacterAnimations/FreeCatCharacterAnimations/2_Cat_Run-Sheet.png" id="5_3smsa"]
+[ext_resource type="Texture2D" uid="uid://c7efgpihq47t" path="res://Scripts/Assets/FreeCatCharacterAnimations/FreeCatCharacterAnimations/3_Cat_Jump-Sheet.png" id="3_fkybt"]
+[ext_resource type="Texture2D" uid="uid://bdi65wif5buv4" path="res://Scripts/Assets/FreeCatCharacterAnimations/FreeCatCharacterAnimations/4_Cat_Fall-Sheet.png" id="4_x3wgy"]
+[ext_resource type="Texture2D" uid="uid://btrsqfyijp6bv" path="res://Scripts/Assets/FreeCatCharacterAnimations/FreeCatCharacterAnimations/2_Cat_Run-Sheet.png" id="5_3smsa"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_pu2lt"]
 atlas = ExtResource("4_x3wgy")

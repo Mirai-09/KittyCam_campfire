@@ -1,9 +1,9 @@
 [gd_scene load_steps=8 format=3 uid="uid://ckbwk6msuxasc"]
 
-[ext_resource type="Texture2D" uid="uid://cm2j3re4ojywf" path="res://Assets/Buttons/Button_Blue_3Slides.png" id="1_8saeu"]
-[ext_resource type="Texture2D" uid="uid://duesoev74nauc" path="res://Assets/image (1).png" id="1_df05h"]
-[ext_resource type="Texture2D" uid="uid://qv62jt6m0llq" path="res://Assets/Buttons/Button_Blue_3Slides_Pressed.png" id="2_ghw46"]
-[ext_resource type="Texture2D" uid="uid://cwtd0rlls2r7v" path="res://Assets/Buttons/Button_Hover_3Slides.png" id="3_df05h"]
+[ext_resource type="Texture2D" uid="uid://cm2j3re4ojywf" path="res://Scripts/Assets/Buttons/Button_Blue_3Slides.png" id="1_8saeu"]
+[ext_resource type="Texture2D" uid="uid://duesoev74nauc" path="res://Scripts/Assets/image (1).png" id="1_df05h"]
+[ext_resource type="Texture2D" uid="uid://qv62jt6m0llq" path="res://Scripts/Assets/Buttons/Button_Blue_3Slides_Pressed.png" id="2_ghw46"]
+[ext_resource type="Texture2D" uid="uid://cwtd0rlls2r7v" path="res://Scripts/Assets/Buttons/Button_Hover_3Slides.png" id="3_df05h"]
 [ext_resource type="Script" uid="uid://cj4013sgl38jh" path="res://Scripts/start_button.gd" id="4_ghw46"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_8um5k"]
