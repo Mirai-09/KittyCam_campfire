@@ -1,0 +1,149 @@
+[gd_scene load_steps=10 format=3 uid="uid://ckdh4proqunyj"]
+
+[ext_resource type="Texture2D" uid="uid://duesoev74nauc" path="res://Assets/image (1).png" id="1_nkglw"]
+[ext_resource type="Texture2D" uid="uid://cm2j3re4ojywf" path="res://Assets/Buttons/Button_Blue_3Slides.png" id="2_ny72n"]
+[ext_resource type="Texture2D" uid="uid://qv62jt6m0llq" path="res://Assets/Buttons/Button_Blue_3Slides_Pressed.png" id="3_ww1lq"]
+[ext_resource type="Texture2D" uid="uid://cwtd0rlls2r7v" path="res://Assets/Buttons/Button_Hover_3Slides.png" id="4_gibvv"]
+[ext_resource type="Script" uid="uid://cj4013sgl38jh" path="res://Scripts/start_button.gd" id="5_ylt2r"]
+[ext_resource type="Script" uid="uid://c7qi010joj8tt" path="res://Scripts/endscore.gd" id="7_ww1lq"]
+[ext_resource type="Script" uid="uid://cx7ty6cghnapu" path="res://main_menu_button.gd" id="8_gibvv"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_8um5k"]
+texture = ExtResource("1_nkglw")
+
+[sub_resource type="FontVariation" id="FontVariation_8saeu"]
+
+[node name="EndMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -9.0
+offset_top = -24.0
+offset_right = -9.0
+offset_bottom = -24.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="."]
+modulate = Color(0.20152658, 0.20152658, 0.20152658, 1)
+self_modulate = Color(0.39688927, 0.39688927, 0.39688924, 1)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_8um5k")
+
+[node name="Label2" type="Label" parent="."]
+custom_minimum_size = Vector2(0, 120)
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 59.0
+offset_top = 89.0
+offset_right = -62.0
+offset_bottom = 209.0
+grow_horizontal = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.8039216)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_outline_size = 16
+theme_override_fonts/font = SubResource("FontVariation_8saeu")
+theme_override_font_sizes/font_size = 72
+text = "Good job!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ResetButton" type="TextureButton" parent="."]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -312.0
+offset_top = 37.0
+offset_right = -38.0
+offset_bottom = 149.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("2_ny72n")
+texture_pressed = ExtResource("3_ww1lq")
+texture_hover = ExtResource("4_gibvv")
+stretch_mode = 0
+script = ExtResource("5_ylt2r")
+
+[node name="Label" type="Label" parent="ResetButton"]
+custom_minimum_size = Vector2(0, 120)
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 62.0
+offset_top = -19.0
+offset_right = -59.0
+offset_bottom = 101.0
+grow_horizontal = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.8039216)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_outline_size = 16
+theme_override_fonts/font = SubResource("FontVariation_8saeu")
+theme_override_font_sizes/font_size = 26
+text = "Reset"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Main_menu_button" type="TextureButton" parent="."]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 55.0
+offset_top = 37.0
+offset_right = 329.0
+offset_bottom = 149.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("2_ny72n")
+texture_pressed = ExtResource("3_ww1lq")
+texture_hover = ExtResource("4_gibvv")
+stretch_mode = 0
+script = ExtResource("8_gibvv")
+
+[node name="Label" type="Label" parent="Main_menu_button"]
+custom_minimum_size = Vector2(0, 120)
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 62.0
+offset_top = -19.0
+offset_right = -59.0
+offset_bottom = 101.0
+grow_horizontal = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.8039216)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_outline_size = 16
+theme_override_fonts/font = SubResource("FontVariation_8saeu")
+theme_override_font_sizes/font_size = 26
+text = "Main Menu"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="endscore" type="Label" parent="."]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 475.0
+offset_top = 219.0
+offset_right = 721.0
+offset_bottom = 327.0
+theme_override_font_sizes/font_size = 56
+script = ExtResource("7_ww1lq")
+
+[connection signal="pressed" from="ResetButton" to="ResetButton" method="_on_start_pressed"]
+[connection signal="pressed" from="ResetButton" to="ResetButton" method="_on_pressed"]
+[connection signal="pressed" from="Main_menu_button" to="Main_menu_button" method="_on_start_pressed"]
+[connection signal="pressed" from="Main_menu_button" to="Main_menu_button" method="_on_pressed"]

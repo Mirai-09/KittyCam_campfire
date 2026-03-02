@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="KittyCam_Campfire"
-run/main_scene="uid://ckbwk6msuxasc"
+run/main_scene="uid://ckdh4proqunyj"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
 
@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 GestureManager="*res://GestureManager.gd"
 GameManager="*res://Scripts/game_manager.gd"
+GlobalAudioStreamPlayer="*res://Scenes/audio_stream_player.tscn"
 
 [rendering]
 

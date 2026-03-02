@@ -1,11 +1,9 @@
-[gd_scene load_steps=12 format=3 uid="uid://btf8y0q662l6j"]
+[gd_scene load_steps=10 format=3 uid="uid://btf8y0q662l6j"]
 
 [ext_resource type="Script" uid="uid://cwbec8701bih3" path="res://Scripts/main_game.gd" id="1_0e3vx"]
 [ext_resource type="PackedScene" uid="uid://bfh4wxnqu68fa" path="res://Scenes/player.tscn" id="1_l756w"]
 [ext_resource type="Texture2D" uid="uid://c8pv3oxgjiy34" path="res://Assets/brackeys_platformer_assets/brackeys_platformer_assets/sprites/world_tileset.png" id="2_pu3va"]
-[ext_resource type="FontFile" uid="uid://vcmqj20khw8h" path="res://Assets/brackeys_platformer_assets/brackeys_platformer_assets/fonts/PixelOperator8.ttf" id="3_bb2iq"]
 [ext_resource type="PackedScene" uid="uid://c83m3r4gx2l2f" path="res://Assets/CatUIFree/__MACOSX/CatUIFree/coin.tscn" id="4_6j5ir"]
-[ext_resource type="Script" uid="uid://bfn5mssrrahx2" path="res://Scripts/game_manager.gd" id="5_mgc0q"]
 [ext_resource type="AudioStream" uid="uid://c3ge7yqjns2cn" path="res://Assets/brackeys_platformer_assets/brackeys_platformer_assets/sounds/coin.wav" id="6_18r40"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0e3vx"]
@@ -170,20 +168,6 @@ distance = -2312.9204
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_0e3vx")
-
-[node name="GameManager" type="Node" parent="."]
-unique_name_in_owner = true
-script = ExtResource("5_mgc0q")
-
-[node name="Scorelabel" type="Label" parent="GameManager"]
-unique_name_in_owner = true
-offset_left = 30.0
-offset_top = -44.0
-offset_right = 83.0
-offset_bottom = -23.0
-theme_override_fonts/font = ExtResource("3_bb2iq")
-theme_override_font_sizes/font_size = 8
-text = "You won!"
 
 [node name="Player" parent="." instance=ExtResource("1_l756w")]
 position = Vector2(24, -13)
