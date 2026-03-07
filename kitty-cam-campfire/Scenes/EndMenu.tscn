@@ -136,9 +136,9 @@ vertical_alignment = 1
 [node name="endscore" type="Label" parent="."]
 unique_name_in_owner = true
 layout_mode = 0
-offset_left = 475.0
+offset_left = 439.0
 offset_top = 219.0
-offset_right = 721.0
+offset_right = 685.0
 offset_bottom = 327.0
 theme_override_font_sizes/font_size = 56
 script = ExtResource("7_ww1lq")

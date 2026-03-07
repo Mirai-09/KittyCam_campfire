@@ -1,7 +1,7 @@
 [gd_scene load_steps=2 format=3 uid="uid://c08nqxj8j3y54"]
 
-[ext_resource type="AudioStream" uid="uid://cmi8w0cimwn8y" path="res://Scripts/Assets/goldensoundlabs-shimmy-294651.mp3" id="1_td4n3"]
+[ext_resource type="AudioStream" uid="uid://lqq3on2f8iru" path="res://Assets/goldensoundlabs-shimmy-294651.ogg" id="1_px1li"]
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer"]
-stream = ExtResource("1_td4n3")
+stream = ExtResource("1_px1li")
 autoplay = true

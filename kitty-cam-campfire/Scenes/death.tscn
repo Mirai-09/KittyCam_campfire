@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://de4enyp483mbb"]
+
+[ext_resource type="PackedScene" uid="uid://2njbisdf86m0" path="res://Scenes/km.tscn" id="1_g62mh"]
+
+[node name="Node" type="Node"]
+
+[node name="death" parent="." instance=ExtResource("1_g62mh")]

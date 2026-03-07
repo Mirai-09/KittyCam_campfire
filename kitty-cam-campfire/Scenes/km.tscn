@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://2njbisdf86m0"]
+
+[ext_resource type="Script" uid="uid://dt36ge3mwlnwf" path="res://Scenes/death.gd" id="1_y2jjq"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_y2jjq"]
+
+[node name="death" type="Area2D"]
+script = ExtResource("1_y2jjq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+light_mask = 2
+position = Vector2(422.5, 87.5)
+shape = SubResource("CircleShape2D_y2jjq")
+
+[node name="Timer" type="Timer" parent="."]

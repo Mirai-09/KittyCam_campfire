@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bivej1vw7r7pa"
+path="res://.godot/imported/goldensoundlabs-shimmy-294651.ogg-6ca36a0113e30a7298290083cf5db6ee.oggvorbisstr"
+
+[deps]
+
+source_file="res://Assets/Isometric Geo Pack v1.0/goldensoundlabs-shimmy-294651.ogg"
+dest_files=["res://.godot/imported/goldensoundlabs-shimmy-294651.ogg-6ca36a0113e30a7298290083cf5db6ee.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
